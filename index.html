@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY_PET - Three.js MVP</title>
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; background: #101419; }
+      #hud {
+        position: fixed;
+        left: 12px;
+        top: 12px;
+        color: #d9f2ff;
+        font: 12px/1.4 monospace;
+        background: rgba(0,0,0,0.35);
+        padding: 8px 10px;
+        border-radius: 8px;
+        z-index: 10;
+        min-width: 220px;
+      }
+      #hint {
+        position: fixed;
+        bottom: 12px;
+        left: 12px;
+        color: #fff;
+        background: rgba(0,0,0,0.35);
+        padding: 8px 10px;
+        border-radius: 8px;
+        font: 12px monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hud"></div>
+    <div id="hint">Click to lock pointer. WASD move, mouse look, F/P/C/G interact.</div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
